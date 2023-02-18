@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envio de Emails</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/spinner.css">
 </head>
 
 <body class="min-h-screen bg-slate-300">
 
     <div class="max-w-3xl mx-auto p-10">
-        <h1 class="text-4xl text-gray-700 pt-32">Enviar mails</h1>
+        <h1 class="text-4xl text-gray-700 pt-16">Enviar mails</h1>
 
         <div class="bg-white rounded-lg shadow-xl p-10 mt-5">
 
@@ -23,6 +24,12 @@
                     <input id="email" type="email" name="email" placeholder="Email Destino, ej: mkt@empresa.com"
                         class="border border-gray-300 px-3 py-2 rounded-lg" />
                 </div>
+
+                <!-- <div class="flex flex-col space-y-2">
+                    <label for="cc" class="font-regular font-medium">Cc:</label>
+                    <input id="cc" type="email" name="cc" placeholder="Destinatario Extra, ej: mkt@empresa.com"
+                        class="border border-gray-300 px-3 py-2 rounded-lg" />
+                </div> -->
 
                 <div class="flex flex-col space-y-2">
                     <label for="asunto" class="font-regular font-medium">Asunto:</label>
@@ -60,6 +67,17 @@
                 </div>
 
             </form>
+
+            <div id="spinner" class="hidden justify-center mt-10">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
 
         </div>
 
